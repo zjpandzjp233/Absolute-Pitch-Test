@@ -60,7 +60,7 @@ def combine_and_play(play_list,slow_play=False,answer=None):
     for one in play_list:
         channel_list.append(pygame.mixer.Channel(int_i))
         int_i+=1 # 也表示了通道channel的数目
-    if int_i>3:
+    if int_i>=3:
         is_True=True
     volume_infact=int_i
     int_2=int_i
